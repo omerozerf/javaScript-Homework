@@ -1,0 +1,22 @@
+let midterm= prompt(`Enter midterm: `);
+let final= prompt(`Enter final: `);
+
+let gpa= (midterm*0.3) + (final*0.7);
+console.log(`Your score: ${gpa}`);
+if(gpa>=0 && gpa<=30)
+{
+    document.write(`Not passed (FF) - Score: ${gpa}`);
+}
+
+else if (gpa>=31 && gpa<=49)
+{
+    document.write(`DC - Conditional - Score: ${gpa}`);
+}
+else if(gpa>=50 && gpa<=84)
+{
+    document.write(`CC - Passed - Your Note: ${gpa}`)
+}
+else if(gpa<=85 && gpa<=100)
+{
+    document.write(`AA ${gpa}`);
+}
